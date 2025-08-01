@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
-import ResponsiveNav from "@/components/Home/Header/ResponsiveNav";
+import ResponsiveNav from "@/components/Header/ResponsiveNav";
 
 const manrope = Manrope({
   subsets: ["latin"],

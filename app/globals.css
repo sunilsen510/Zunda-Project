@@ -7,4 +7,43 @@ body{
     background: var(--background);
     font-family: "manrope";
     font-size: 16px;
+    min-height: 100vh;
+}
+.circle-clip {
+  /* clip-path: circle(70% at 50% 0%); */
+   clip-path: circle(70% at 50% 0%);
+}
+
+.hexagon {
+    position: relative;
+    background-color: dodgerblue;
+    border-radius: 10px;
+    width: 100px;
+    height: 63px;
+    box-sizing: border-box;
+    transition: all 1s;
+    border: 4px solid transparent;
+}
+
+/* Creating pseudo-class */
+.hexagon:before,
+.hexagon:after {
+    content: "";
+    border: inherit;
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    background-color: dodgerblue;
+    border-radius: inherit;
+    height: 100%;
+    width: 100%;
+}
+
+/* Align them to form a hexagon */
+.hexagon:before {
+    transform: rotate(60deg);
+}
+
+.hexagon:after {
+    transform: rotate(-60deg);
 }

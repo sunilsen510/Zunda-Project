@@ -24,6 +24,14 @@ module.exports = {
       maxWidth: {
         '1372': '1372px',
       },
+      clipPath: {
+        'circle-top': 'circle(50% at 50% 0%)',
+      },
+      boxShadow: {
+        'custom-down': '0px 4.35px 53.29px 0px #00000014',
+        'custom-up': '0px -4.35px 37.74px 0px #00000040',
+        'custom-both': '0px -4.35px 37.74px #00000040, 0px 4.35px 53.29px #00000014',
+      },
     },
   },
   variants: {
